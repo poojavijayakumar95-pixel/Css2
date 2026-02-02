@@ -1,0 +1,244 @@
+
+/* -----------------------------
+GENERAL
+------------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* -----------------------------
+1. Equation
+------------------------------*/
+.eq span {
+  display: inline-block;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* -----------------------------
+2. Image styles
+------------------------------*/
+images {
+  width: 150px;
+  border: 3px dashed gray;
+  border-radius: 15px;
+  filter: grayscale(100%);
+  margin: 10px;
+}
+
+/* -----------------------------
+3. Media query (font size only)
+------------------------------*/
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* -----------------------------
+4. Cursor styles
+------------------------------*/
+.pointer { cursor: pointer; }
+.crosshair { cursor: crosshair; }
+.wait { cursor: wait; }
+.text { cursor: text; }
+
+/* -----------------------------
+5. Box model
+------------------------------*/
+.box-model {
+  width: 200px;
+  padding: 20px;
+  margin: 15px;
+  border: 2px solid black;
+}
+
+/* -----------------------------
+6. Span hover
+------------------------------*/
+.hover-span:hover {
+  color: red;
+  font-size: 22px;
+  font-family: Courier New;
+}
+
+/* -----------------------------
+7. Translate
+------------------------------*/
+.move {
+  width: 100px;
+  height: 50px;
+  background: lightblue;
+}
+.move:hover {
+  transform: translate(50px, 20px);
+}
+
+/* -----------------------------
+8. Tooltip
+------------------------------*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-text {
+  visibility: hidden;
+  background: black;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* -----------------------------
+9. Clip
+------------------------------*/
+.clip-img {
+  clip: rect(0px, 120px, 120px, 0px);
+  position: relative;
+}
+
+/* -----------------------------
+10. Drop cap
+------------------------------*/
+
+
+body{
+  margin:0;
+  padding:40px;
+  font-family: 'Playfair Display', serif;
+  background:
+    linear-gradient(to bottom, #e9eef3 0%, #f4f6f9 60%, #dfe6ee 100%);
+}
+
+/* Container */
+.drop-wrapper{
+  max-width: 900px;
+}
+
+/* Paragraph */
+.drop-text{
+  font-size: 36px;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* Drop cap */
+.drop-text::first-letter{
+  font-size: 140px;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding-right: 15px;
+  padding-top: 8px;
+}
+
+
+/* -----------------------------
+11. Half rounded div
+------------------------------*/
+.half-rounded {
+  width: 300px;
+  height: 150px;
+  background: #c8eff1;
+  border-radius: 0 0 60px 0;
+}
+
+/* -----------------------------
+12. Background image
+------------------------------*/
+.bg-img {
+  height: 150px;
+  background: url("bg.jpg") center no-repeat;
+}
+
+/* -----------------------------
+13. Flex reverse
+------------------------------*/
+.flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box {
+  width: 80px;
+  height: 80px;
+}
+.red { background: red; }
+.green { background: green; }
+.blue { background: blue; }
+
+/* -----------------------------
+14. Border image
+------------------------------*/
+.image-border {
+  width: 200px;
+  height: 120px;
+  border: 30px solid transparent;
+  border-image: url("border.png") 30 stretch;
+}
+
+/* -----------------------------
+15. Bottom left radius
+------------------------------*/
+.bottom-left {
+  width: 200px;
+  height: 100px;
+  background: coral;
+  border-bottom-left-radius: 25px;
+}
+
+/* -----------------------------
+16. Image hover opacity
+------------------------------*/
+.fade-img {
+  opacity: 0.4;
+}
+.fade-img:hover {
+  opacity: 1;
+}
+
+/* -----------------------------
+17. Absolute right
+------------------------------*/
+.right-div {
+  position: absolute;
+  right: 0;
+  background: orange;
+  width: 120px;
+  height: 80px;
+}
+
+/* -----------------------------
+18. Scrollbar
+------------------------------*/
+.scroll-box {
+  width: 200px;
+  height: 80px;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+/* -----------------------------
+19. Linear gradient
+------------------------------*/
+.gradient {
+  width: 200px;
+  height: 120px;
+  background: linear-gradient(white, red, blue, green);
+}
+
+/* -----------------------------
+20. Rotate
+------------------------------*/
+.rotate {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transform: rotate(45deg);
+}
